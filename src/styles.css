@@ -1,0 +1,100 @@
+/* Estilo base para toda a aplicação */
+.App {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para os textos principais */
+h1,
+h2,
+p {
+  margin: 10px 0;
+  padding: 0 15px;
+  max-width: 90%;
+}
+
+/* Botões gerais */
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4757;
+}
+
+/* Estilo específico para o coração */
+.hidden-heart {
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+/* Estilo para a imagem na mensagem final */
+.final-message img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.joke-screen button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.joke-screen button:hover {
+  background-color: #ff4757;
+}
+
+/* Ajustes específicos para dispositivos móveis */
+@media only screen and (max-width: 430px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hidden-heart {
+    font-size: 40px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .final-message img {
+    width: 90%;
+    max-width: 250px;
+  }
+}
